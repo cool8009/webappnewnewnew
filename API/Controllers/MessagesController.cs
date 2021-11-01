@@ -19,19 +19,14 @@ namespace API.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<List<Message>>> GetMessages()
-        {
+        public async Task<ActionResult<List<Message>>> GetMessages() =>
+             await _context.Messages.ToListAsync();
+        
 
-            return await _context.Messages.ToListAsync();
-
-        }
-
-        [HttpGet("{id}")]
-        public async Task<ActionResult<Message>> GetMessage(Guid id)
-        {
-
-            return await _context.Messages.FindAsync(id);
+        [HttpGet("{id}")] 
+        public async Task<ActionResult<Message>> GetMessage(Guid id) =>
+            await _context.Messages.FindAsync(id);
             
-        }
+        
     }
 }
