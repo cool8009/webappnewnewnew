@@ -14,16 +14,19 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using Persistence;
 using MediatR;
+using AutoMapper;
 using Application.Messages;
+using Application.Core;
+using API.Controllers;
 
 namespace API
 {
     public class Startup
     {
-        private IConfiguration Config { get; }
+        private IConfiguration _config { get; }
         public Startup(IConfiguration config)
         {
-            this.Config = config;
+            this._config = config;
         }
 
 
@@ -32,24 +35,7 @@ namespace API
         {
 
             services.AddControllers();
-            services.AddSwaggerGen(c =>
-            {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "API", Version = "v1" });
-            });
-            services.AddDbContext<DataContext>(opt =>
-                {
-                    opt.UseSqlite(Config.GetConnectionString("DefaultConnection"));
-                });
-
-            services.AddCors(opt =>
-            {
-                opt.AddPolicy("CorsPolicy", policy => 
-                {
-                    policy.AllowAnyMethod().AllowAnyHeader().WithOrigins("http://localhost:3000");
-
-                });
-            });
-            services.AddMediatR(typeof(List.Handler).Assembly);
+            services.AddApplicationServices(_config);
             
         }
 

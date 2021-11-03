@@ -7,7 +7,7 @@ namespace Domain
 {
     public class Message
     {
-        public Guid MessageId { get; set; }
+        public Guid Id { get; set; }
         public string Content { get; set; }
         public DateTime DateSent { get; set; }
 
