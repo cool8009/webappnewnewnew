@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Application.Messages;
 using Domain;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -11,21 +12,15 @@ namespace API.Controllers
 {
     public class MessagesController : BaseApiController
     {
-        private readonly DataContext _context;
-
-        public MessagesController(DataContext context)
-        {
-            _context = context;
-        }
 
         [HttpGet]
         public async Task<ActionResult<List<Message>>> GetMessages() =>
-             await _context.Messages.ToListAsync();
+             await Mediator.Send(new List.Query());
         
 
         [HttpGet("{id}")] 
         public async Task<ActionResult<Message>> GetMessage(Guid id) =>
-            await _context.Messages.FindAsync(id);
+            Ok();
             
         
     }

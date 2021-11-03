@@ -13,6 +13,8 @@ using Microsoft.Extensions.Logging;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using Persistence;
+using MediatR;
+using Application.Messages;
 
 namespace API
 {
@@ -47,6 +49,7 @@ namespace API
 
                 });
             });
+            services.AddMediatR(typeof(List.Handler).Assembly);
             
         }
 
