@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "x07WTLR4wYybfZ+54eHrCBQPspt1hNszabJzxlmH/bAeT7T6becJ1hDL3TK2f5DGXq34bJ8KThvDS/q2HfBLDg==",
+  "dgSpecHash": "dDSVq7Rn8VVRy189/D5ZQddcx9ZJT92ML1JWUtRr3oNIXnv9hMI5AJiThQoTJF3ImvSz1vn9/7aeuwOVd0wovA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Yakov\\Desktop\\webappnewnewnew\\api\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Yakov\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
+    "C:\\Users\\Yakov\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",
+    "C:\\Users\\Yakov\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\9.0.0\\mediatr.extensions.microsoft.dependencyinjection.9.0.0.nupkg.sha512",
     "C:\\Users\\Yakov\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Yakov\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",
     "C:\\Users\\Yakov\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.0.1\\microsoft.data.sqlclient.sni.runtime.2.0.1.nupkg.sha512",
