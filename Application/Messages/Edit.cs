@@ -27,7 +27,7 @@ namespace Application.Messages
             }
             public async Task<Unit> Handle(Command request, CancellationToken cancellationToken)
             {
-                var message = await _context.Messages.FindAsync(request.Message.Id);
+                var message = await _context.Messages.FindAsync(request.Message.MessageId);
                 _mapper.Map(request.Message, message); //automapper for mapping the message from the request to the message object
 
                 await _context.SaveChangesAsync();

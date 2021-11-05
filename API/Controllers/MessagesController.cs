@@ -15,7 +15,7 @@ namespace API.Controllers
 
         [HttpGet]
         public async Task<ActionResult<List<Message>>> GetMessages() =>
-             await Mediator.Send(new List.Query());
+            await Mediator.Send(new List.Query());
         
 
         [HttpGet("{id}")] 
@@ -31,7 +31,7 @@ namespace API.Controllers
         [HttpPut("{id}")]
         public async Task<IActionResult> EditMessage(Guid id, Message message)
         {
-            message.Id = id;
+            message.MessageId = id;
             return Ok(await Mediator.Send(new Edit.Command{Message = message}));
         }
         
