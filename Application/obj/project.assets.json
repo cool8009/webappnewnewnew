@@ -5861,25 +5861,30 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Yakov\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\User\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Yakov\\Desktop\\webapplatest\\webappnewnewnew\\Application\\Application.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Desktop\\webapp6.11\\webappnewnewnew\\Application\\Application.csproj",
       "projectName": "Application",
-      "projectPath": "C:\\Users\\Yakov\\Desktop\\webapplatest\\webappnewnewnew\\Application\\Application.csproj",
-      "packagesPath": "C:\\Users\\Yakov\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Yakov\\Desktop\\webapplatest\\webappnewnewnew\\Application\\obj\\",
+      "projectPath": "C:\\Users\\User\\Desktop\\webapp6.11\\webappnewnewnew\\Application\\Application.csproj",
+      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\User\\Desktop\\webapp6.11\\webappnewnewnew\\Application\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Yakov\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
@@ -5892,11 +5897,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\Yakov\\Desktop\\webapplatest\\webappnewnewnew\\Domain\\Domain.csproj": {
-              "projectPath": "C:\\Users\\Yakov\\Desktop\\webapplatest\\webappnewnewnew\\Domain\\Domain.csproj"
+            "C:\\Users\\User\\Desktop\\webapp6.11\\webappnewnewnew\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Users\\User\\Desktop\\webapp6.11\\webappnewnewnew\\Domain\\Domain.csproj"
             },
-            "C:\\Users\\Yakov\\Desktop\\webapplatest\\webappnewnewnew\\Persistence\\Persistence.csproj": {
-              "projectPath": "C:\\Users\\Yakov\\Desktop\\webapplatest\\webappnewnewnew\\Persistence\\Persistence.csproj"
+            "C:\\Users\\User\\Desktop\\webapp6.11\\webappnewnewnew\\Persistence\\Persistence.csproj": {
+              "projectPath": "C:\\Users\\User\\Desktop\\webapp6.11\\webappnewnewnew\\Persistence\\Persistence.csproj"
             }
           }
         }
@@ -5935,7 +5940,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.303\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
       }
     }
   }
