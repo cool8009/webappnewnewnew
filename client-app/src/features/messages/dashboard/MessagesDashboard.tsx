@@ -6,10 +6,11 @@ import MessageForm from "./MessageForm";
 
 interface Props {
     messages: Message[];
+    createMessage: (message : Message ) => void;
 }
 
-export default function MessagesDashboard({ messages }: Props) {
-
+export default function MessagesDashboard({ messages, createMessage }: Props) {
+    
     return (
         <Grid>
             <Grid.Column width='16'>
@@ -17,7 +18,7 @@ export default function MessagesDashboard({ messages }: Props) {
             </Grid.Column>
             <Grid.Column width='16'>
                 <Grid.Row >
-                    <MessageForm />
+                    <MessageForm createMessage={createMessage} message={new Message} />
                 </Grid.Row>
             </Grid.Column>
         </Grid>
