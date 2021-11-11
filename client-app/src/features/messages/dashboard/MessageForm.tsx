@@ -30,7 +30,7 @@ function MessageForm({message : createdMessage , createMessage} : Props)  {
 		// let newMessage = message;
 		// newMessage.content = event.target.value;
 		// setMessage(newMessage);
-		const {name, value} = event.target;
+		const {value} = event.target;
 		setMessage({...message, content: value});
 	}
 	

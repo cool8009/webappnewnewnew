@@ -1,5 +1,5 @@
 import React from "react";
-import { Item, ItemExtra, ItemMeta, List, Segment } from "semantic-ui-react";
+import { List, Segment } from "semantic-ui-react";
 import { Message } from "../../../app/models/message";
 import moment from 'moment';
 
@@ -55,26 +55,3 @@ export default function MessageList({ messages }: Props) {
 }
 
 
-{/* <Segment>
-            <Item.Group divided>
-                {messages.map(message => (
-                    <Item key={message.messageId}>
-                        
-                        <Item.Content >
-                            <Item.Header>
-                                PlaceholderUserName
-                            </Item.Header>
-                            <Item.Description>
-                                {message.content}
-                            </Item.Description>
-                            <Item.Extra>
-                                {message.dateSent}
-                            </Item.Extra>
-                        </Item.Content>
-
-                    </Item>
-
-                ))}
-
-            </Item.Group>
-        </Segment> */}
