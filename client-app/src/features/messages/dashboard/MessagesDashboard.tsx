@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid, List } from "semantic-ui-react";
+import { Grid } from "semantic-ui-react";
 import { Message } from '../../../app/models/message'
 import MessageList from "./MessageList";
 import MessageForm from "./MessageForm";
