@@ -1,28 +1,40 @@
 import React, {useEffect, useState} from 'react';
 import './styles.css';
-import axios from 'axios';
 import {  Container, List } from 'semantic-ui-react';
 import { Message } from '../models/message';
 import NavBar from './NavBar';
 import MessagesDashboard from '../../features/messages/dashboard/MessagesDashboard';
+import agent from '../api/agent'
+
+
+
+
 
 function App() {
   const [messages, setMessages] = useState<Message[]>([]);
+  //const [submitting, setSubmitting] = useState(false);
   useEffect(() => {
-    axios.get<Message[]>('http://localhost:5000/api/messages').then(response => {
+    agent.Messages.list().then(response => {
       console.log(response);
-      setMessages(response.data);
+      setMessages(response);
     })
 
   }, [])
 
+    function handleCreateMessage(message: Message) {
+      setMessages([...messages, message]);
+
+    }
 
 
   return (
     <>
       <NavBar/>
       <Container style={{marginTop: '7em'}} >
-          <MessagesDashboard  messages = {messages}/>
+          <MessagesDashboard  
+          messages = {messages}
+          createMessage = {handleCreateMessage}
+          />
       </Container>
     </>
   );

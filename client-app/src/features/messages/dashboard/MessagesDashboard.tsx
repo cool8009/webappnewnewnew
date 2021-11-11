@@ -18,7 +18,7 @@ export default function MessagesDashboard({ messages, createMessage }: Props) {
             </Grid.Column>
             <Grid.Column width='16'>
                 <Grid.Row >
-                    <MessageForm createMessage={createMessage} message={new Message} />
+                    <MessageForm createMessage={createMessage} message={undefined} />
                 </Grid.Row>
             </Grid.Column>
         </Grid>
