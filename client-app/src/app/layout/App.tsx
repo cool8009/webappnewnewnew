@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import './styles.css';
-import {  Container, List } from 'semantic-ui-react';
+import {  Container } from 'semantic-ui-react';
 import { Message } from '../models/message';
 import NavBar from './NavBar';
 import MessagesDashboard from '../../features/messages/dashboard/MessagesDashboard';
