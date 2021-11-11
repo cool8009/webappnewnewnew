@@ -12,7 +12,7 @@ interface Props {
 function MessageForm({message : createdMessage , createMessage} : Props)  {
 	
 	const initialState = createdMessage ?? {
-		messageId: Guid.create().toString,
+		messageId: Guid.create(),
 		content: '',
 		dateSent: new Date().toString()
 

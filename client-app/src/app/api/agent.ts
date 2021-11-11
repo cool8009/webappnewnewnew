@@ -15,7 +15,7 @@ const requests = {
 
 }
 
-//makes a get request 
+//makes a request to the api server
 const Messages = {
     list: () => requests.get<Message[]>('/messages'),
     create: (message: Message) => axios.post('/messages', message)
