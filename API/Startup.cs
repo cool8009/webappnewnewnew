@@ -18,6 +18,9 @@ using AutoMapper;
 using Application.Messages;
 using Application.Core;
 using API.Controllers;
+using API.Extensions;
+using Domain;
+using Microsoft.AspNetCore.Identity;
 
 namespace API
 {
@@ -36,6 +39,15 @@ namespace API
 
             services.AddControllers();
             services.AddApplicationServices(_config);
+            services.AddIdentityCore<User>(opt => 
+            {
+                opt.Password.RequireNonAlphanumeric = false;
+            })
+            .AddEntityFrameworkStores<DataContext>()
+            .AddSignInManager<SignInManager<User>>();
+
+            services.AddAuthentication();
+
             
         }
 

@@ -12,7 +12,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.OpenApi.Models;
 using Persistence;
 
-namespace API.Controllers
+namespace API.Extensions
 {
     public static class ApplicationServiceExtensions
     {
